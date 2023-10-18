@@ -27,10 +27,8 @@ public class OracleController {
         Long actionId= Long.parseLong(id);
         actionMsg = actionRepository.findById(actionId);
         if(actionMsg!=null){
-            Log.info("********INSIDE*********");
             return new ResponseEntity<>(actionMsg, HttpStatus.OK);
         }else {
-            Log.info("********OUTSIDE*******");
             return new ResponseEntity<>(null);
         }
 
