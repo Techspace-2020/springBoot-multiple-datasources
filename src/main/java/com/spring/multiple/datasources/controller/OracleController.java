@@ -29,7 +29,7 @@ public class OracleController {
         if(actionMsg!=null){
             return new ResponseEntity<>(actionMsg, HttpStatus.OK);
         }else {
-            return new ResponseEntity<>(null);
+            return new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
         }
 
     }

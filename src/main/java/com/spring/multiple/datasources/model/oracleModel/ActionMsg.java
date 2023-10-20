@@ -1,10 +1,8 @@
 package com.spring.multiple.datasources.model.oracleModel;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.Type;
 
 import java.sql.Timestamp;
 
@@ -15,6 +13,10 @@ public class ActionMsg {
     @Id
     @Column(name = "ID")
     private Long id;
+
+    @Lob
+    @Column(name= "message_xml")
+    private String messageXML;
 
     @Column(name = "TS_CREATED")
     private Timestamp tsCreated;

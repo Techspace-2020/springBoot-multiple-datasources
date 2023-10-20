@@ -2,7 +2,6 @@ package com.spring.multiple.datasources.model.postgreModel;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.hibernate.annotations.Type;
 
 import java.sql.Timestamp;
 
@@ -13,6 +12,10 @@ public class ActionMsg {
     @Id
     @Column(name = "ID")
     private Long id;
+
+//    @Lob
+//    @Column(name= "message_xml")
+//    private Long messageXML;
 
     @Column(name = "TS_CREATED")
     private Timestamp tsCreated;
