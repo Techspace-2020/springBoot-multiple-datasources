@@ -3,7 +3,9 @@ package com.spring.multiple.datasources.service;
 import com.spring.multiple.datasources.model.oracleModel.ActionMsg;
 import com.spring.multiple.datasources.repository.oracleRepo.ActionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class OracleDatasourceService {
 
     @Autowired

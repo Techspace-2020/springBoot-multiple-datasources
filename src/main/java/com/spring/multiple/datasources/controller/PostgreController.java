@@ -16,9 +16,6 @@ import java.util.logging.Logger;
 @RequestMapping("/postgre")
 public class PostgreController {
 
-//    @Autowired
-//    private ActionMsgRepository actionMsgRepository;
-
     @Autowired
     private PostgreDatasourceService postgreDatasourceService;
 
