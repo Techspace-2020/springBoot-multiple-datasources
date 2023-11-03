@@ -14,9 +14,9 @@ public class ActionMsg {
     @Column(name = "ID")
     private Long id;
 
-    @Lob
-    @Column(name= "message_xml")
-    private String messageXML;
+//    @Lob
+//    @Column(name= "message_xml")
+//    private String messageXML;
 
     @Column(name = "TS_CREATED")
     private Timestamp tsCreated;
